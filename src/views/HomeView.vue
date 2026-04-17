@@ -1,11 +1,11 @@
 <script setup>
-import HeroComponent from '@/components/HeroComponent.vue';
+import HeroComponentForside from '@/components/HeroComponentForside.vue';
 
 
 </script>
 
 <template>
   <main>
-    <HeroComponent />
+    <HeroComponentForside />
   </main>
 </template>

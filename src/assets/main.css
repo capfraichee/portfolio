@@ -14,15 +14,10 @@ body {
   font-weight: normal;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: var(--bright-orange);
-  transition: 0.4s;
-  padding: 3px;
+a {
+  
 }
 
 a:hover {
-  background-color: var(--dark-orange);
-  color: black;
+  color: var(--text-color);
 }

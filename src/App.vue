@@ -5,12 +5,12 @@ import { RouterLink, RouterView } from 'vue-router'
 <template>
   <div 
     :class="[
-      'grid grid-cols-12 content-start gap-1 px-25 min-h-screen',
+      'grid grid-cols-12 content-start gap-1 px-25 min-h-screen relative',
       $route.path === '/' ? 'bg-black' : 'bg-[var(--background-color-dark)]'
     ]"
   >
-    <header v-if="$route.path !== '/'" class="ml-2 col-span-12 h-15 align-center flex items-center">
-      <nav class="flex flex-row gap-6" style="font-family: 'Mulish', sans-serif; font-weight: 600; text-transform: uppercase; font-size: 20px;">
+    <header v-if="$route.path !== '/'" class="absolute top-0 left-0 w-full h-[70px] z-50 flex items-center px-8 border-b-[2px] border-black">
+      <nav class="flex flex-row gap-6" style="font-family: 'Mulish', sans-serif; font-weight: 400; font-size: 14px;">
         <RouterLink to="/" class="p-2 rounded">Forside</RouterLink>
         <RouterLink to="/about" class="p-2 rounded">Om mig</RouterLink>
         <RouterLink to="/school-projects" class="p-2 rounded ">Skole Projekter</RouterLink>
@@ -25,5 +25,8 @@ import { RouterLink, RouterView } from 'vue-router'
 </template>
 
 <style scoped>
-
+nav a.router-link-exact-active {
+  color: var(--text-color);
+  text-decoration: underline;
+}
 </style>

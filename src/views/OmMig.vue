@@ -1,7 +1,13 @@
+<script setup>
+import HeroComponentMig from '@/components/HeroComponentMig.vue';
+
+
+</script>
+
 <template>
-  <div class="about">
-    <h1 class="text-blue-500">This is an about page</h1>
-  </div>
+  <main>
+    <HeroComponentMig />
+  </main>
 </template>
 
 <style>
