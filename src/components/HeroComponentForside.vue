@@ -1,6 +1,6 @@
 <template>
     <section>
-        <div class="bg-[var(--text-color)] col-start-1 col-end-13 h-[calc(100vh-200px)] my-[100px] flex items-end justify-center relative rounded overflow-hidden">
+        <div class="bg-white col-start-1 col-end-13 h-[calc(100vh-100px)] mt-[40px] flex items-end justify-center relative rounded overflow-hidden">
             <div class="absolute top-[5px] right-[3px] w-6 h-6 bg-red-500 text-white flex items-center justify-center">
                 <span class="text-[12px] font-bold leading-none select-none">X</span>
             </div>
