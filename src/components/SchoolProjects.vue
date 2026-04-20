@@ -15,23 +15,26 @@
                         <div class="w-1/2 h-auto">
                             <img src="../assets/get-forked-poster.png" alt="" class="w-full">
 
+                            <!-- Get Forked Poster -->
                         </div>
                         <div class="w-1/2 h-auto text-[var(--text-color)] flex">
                             <div class="w-3/4 h-auto flex flex-col ml-auto justify-center gap-3">
                                 <h3 class="font-bold leading-none" style="font-size: 48px;">GET FORKED</h3>
-                                <p class="pr-60">Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus.</p>
+                                <p class="pr-60">Vi fik til opgave at lave en plakat til skolens “International Day”.</p>
+                                <p class="pr-60">Jeg lavede en plakat inspireret af “Scream”-filmserien, hvor kniven er erstattet med en gaffel.</p>
                                 <div>
                                     <p>Programmer brugt:</p>
                                     <ul class="list-disc pl-6">
                                         <li>Adobe Illustrator</li>
                                         <li>Adobe Photoshop</li>
-                                        <li>Adobe Indesign</li>
+                                        <li>Adobe InDesign</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Mini-me -->
                     <div class="h-auto bg-gradient-to-r to-[var(--background-color-dark)] from-[var(--background-color-bright)] w-full flex flex-row-reverse rounded">
                         <div class="w-1/2 h-auto flex justify-center">
                             <img src="../assets/mini-me.png" alt="" class="w-1/2 object-contain my-5">
@@ -39,56 +42,64 @@
                         </div>
                         <div class="w-1/2 h-auto text-[var(--text-color)] flex">
                             <div class="w-3/4 h-auto flex flex-col mr-auto justify-center gap-3 pl-32">
-                                <h3 class="font-bold leading-none" style="font-size: 48px;">GET FORKED</h3>
-                                <p class="pr-30">Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus.</p>
+                                <h3 class="font-bold leading-none" style="font-size: 48px;">MINI-ME</h3>
+                                <p class="pr-30">En simpel, men effektiv designopgave, hvor vi skulle lave et miniaturebillede af os selv.</p>
+                                <p class="pr-30">Jeg syntes, det kunne være sjovt at lave mig selv som en Simpsons-figur, fordi jeg så rigtig meget Simpsons som barn.</p>
                                 <div>
                                     <p>Programmer brugt:</p>
                                     <ul class="list-disc pl-6">
                                         <li>Adobe Illustrator</li>
-                                        <li>Adobe Photoshop</li>
-                                        <li>Adobe Indesign</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Beat-up face -->
                     <div class="h-auto bg-gradient-to-r from-[var(--background-color-dark)] to-[var(--background-color-bright)] w-full flex flex-row rounded">
                         <div class="w-1/2 h-auto">
-                            <img src="../assets/get-forked-poster.png" alt="" class="w-full">
+                            <img 
+                                :src="isShowingBeforeBeatup ? beatupafterImg : beatupbeforeImg" 
+                                alt="Beat-up ansigt" 
+                                class="w-full cursor-pointer transition-opacity duration-300" 
+                                @click="isShowingBeforeBeatup = !isShowingBeforeBeatup">
 
                         </div>
                         <div class="w-1/2 h-auto text-[var(--text-color)] flex">
                             <div class="w-3/4 h-auto flex flex-col ml-auto justify-center gap-3">
-                                <h3 class="font-bold leading-none" style="font-size: 48px;">GET FORKED</h3>
-                                <p class="pr-60">Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus.</p>
+                                <h3 class="font-bold leading-none" style="font-size: 48px;">BEAT-UP FACE</h3>
+                                <p class="pr-60">Et Photoshop-projekt, hvor vi skulle redigere vores ansigter, så de så “beat up” ud.</p>
+                                <p class="pr-60">Jeg besluttede at gå all-in og gøre det så realistisk som muligt.</p>
+                                <p class="font-bold" style="text-decoration: underline;">Tryk på billedet for at se før-billedet</p>
                                 <div>
                                     <p>Programmer brugt:</p>
                                     <ul class="list-disc pl-6">
-                                        <li>Adobe Illustrator</li>
                                         <li>Adobe Photoshop</li>
-                                        <li>Adobe Indesign</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Recipe site -->
                     <div class="h-auto bg-gradient-to-r to-[var(--background-color-dark)] from-[var(--background-color-bright)] w-full flex flex-row-reverse rounded">
-                        <div class="w-1/2 h-auto flex justify-center">
-                            <img src="../assets/mini-me.png" alt="" class="w-1/2 object-contain my-5">
+                        <div class="w-1/2 h-auto">
+                            <img 
+                                :src="isShowingBeforeRecipe ? recipesiteImg : recipecodeImg" 
+                                alt="Recipe site" 
+                                class="w-full cursor-pointer transition-opacity duration-300" 
+                                @click="isShowingBeforeRecipe = !isShowingBeforeRecipe">
 
                         </div>
                         <div class="w-1/2 h-auto text-[var(--text-color)] flex">
-                            <div class="w-3/4 h-auto flex flex-col mr-auto justify-center gap-3 pl-32">
-                                <h3 class="font-bold leading-none" style="font-size: 48px;">GET FORKED</h3>
-                                <p class="pr-30">Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus duis convallis tempus.</p>
+                            <div class="w-3/4 h-auto flex flex-col ml-auto justify-center gap-3">
+                                <h3 class="font-bold leading-none" style="font-size: 48px;">RECIPE SITE</h3>
+                                <p class="pr-60">En hjemmeside, vores underviser havde designet, som vi skulle genskabe. Vores eneste opgave var derfor at kode den i Visual Studio Code.</p>
+                                <p class="pr-60 font-bold" style="text-decoration: underline;">Tryk på billedet for at se en del af koden.</p>
                                 <div>
                                     <p>Programmer brugt:</p>
                                     <ul class="list-disc pl-6">
-                                        <li>Adobe Illustrator</li>
-                                        <li>Adobe Photoshop</li>
-                                        <li>Adobe Indesign</li>
+                                        <li>Visual Studio Code</li>
                                     </ul>
                                 </div>
                             </div>
@@ -100,6 +111,15 @@
 </template>
 
 <script setup>
+import { ref } from 'vue';
+
+import beatupbeforeImg from '../assets/beat-up-before.png';
+import beatupafterImg from '../assets/beat-up-after.PNG';
+import recipesiteImg from '../assets/recipe-site.svg';
+import recipecodeImg from '../assets/recipe-code.svg';
+
+const isShowingBeforeBeatup = ref(true);
+const isShowingBeforeRecipe = ref(true);
 </script>
 
 <style scoped>

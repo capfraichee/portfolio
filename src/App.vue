@@ -9,7 +9,7 @@ import { RouterLink, RouterView } from 'vue-router'
       $route.path === '/' ? 'bg-black' : 'bg-[var(--background-color-dark)]'
     ]"
   >
-    <header v-if="$route.path !== '/'" class="absolute top-0 left-0 w-full h-[70px] z-50 flex items-center px-35 border-b-[2px] border-black">
+    <header v-if="$route.path !== '/'" class="absolute top-0 left-0 w-full h-[70px] z-50 flex items-center px-39 border-b-[2px] border-black">
       <nav class="flex flex-row gap-6" style="font-family: 'Mulish', sans-serif; font-weight: 400; font-size: 14px;">
         <RouterLink to="/" class="p-2 rounded">Forside</RouterLink>
         <RouterLink to="/about" class="p-2 rounded">Om mig</RouterLink>

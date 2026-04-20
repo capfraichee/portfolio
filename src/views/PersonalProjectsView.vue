@@ -1,6 +1,12 @@
+<script setup>
+import PersonalProjects from '@/components/PersonalProjects.vue';
+import Footer from '@/components/Footer.vue';
+
+</script>
 <template>
-  <div class="personal-projects">
-    <h1 class="text-blue-500">This is a personal projects page</h1>
+  <div>
+    <PersonalProjects />
+    <Footer />
   </div>
 </template>
 

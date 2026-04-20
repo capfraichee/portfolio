@@ -96,4 +96,5 @@ h4,
 h5,
 h6 {
   font-family: 'Mulish', sans-serif;
+  color: var(--text-color)
 }
