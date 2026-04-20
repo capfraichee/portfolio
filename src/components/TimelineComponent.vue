@@ -3,7 +3,24 @@
         <div class="w-3/4 border-r-2 border-black">
             <img :src="timelineUrl" alt="Timeline" class="w-full h-auto object-cover object-left" />
         </div>
-        <div class="w-1/4 h-auto bg-blue-500">
+        <div class="w-1/4 h-auto">
+            <div class="flex justify-center pt-3 text-[var(--text-color)] font-bold" style="font-family: 'Mulish', sans-serif; font-size: 38px;">
+                Mine styrker
+            </div>
+            <div class="flex flex-row place-content-evenly h-auto items-center">
+                <div class="flex flex-col items-center gap-2">
+                    <p class="text-[var(--text-color)] pb-2 text-center">Video redigering</p>
+                    <img src="../assets/video-redigering.png" alt="Video Redigering">
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <p class="text-[var(--text-color)] pb-2 text-center">Billede redigering</p>
+                    <img src="../assets/billede-redigering.png" alt="Billede Redigering">
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <p class="text-[var(--text-color)] pb-2 text-center">Kode</p>
+                    <img src="../assets/kode.png" alt="Kode">
+                </div>
+            </div>
 
         </div>
     </section>

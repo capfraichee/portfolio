@@ -1,52 +1,54 @@
 <template>
-    <section class="mt-[70px]">
+    <section>
         <div class="flex flex-row w-[100vw] h-auto relative left-[calc(50%-50vw)]">
             <div class="h-auto flex-1 border-r-[2px] border-black">
-                <div class="gap-10 text-[var(--element-color)] flex flex-row">
-                    <p class="ml-2 mt-1" style="font-size: 10px;">Source: Om mig</p>
-                    <p class="mt-1" style="font-size: 10px;">Effects controls</p>
-                    <p class="mt-1" style="font-size: 10px; text-decoration: underline; color: var(--text-color);">Text</p>
-                    <p class="mt-1" style="font-size: 10px;">Properties</p>
-                    <RouterLink to="/school-projects" class="mt-1" style="font-size: 10px;">Project: Skole projekter</RouterLink>
-                    <RouterLink to="/personal-projects" class="mt-1" style="font-size: 10px;">Project: Personlige Projekter</RouterLink>
-                </div>
-                <div class="mt-10 grid grid-cols-12">
-                    <p class="ml-2 mt-1 text-[var(--text-color)] col-span-2" style="font-size: 10px;">Casper</p>
-                    <div class="flex flex-col col-span-10 col-start-3 col-end-12">
-                        <p class="mt-1 text-[var(--element-color)]" style="font-size: 10px;">00:00:00:00 - 00:00:05:17</p>
-                        <p class="mt-1 text-[var(--text-color)]" style="font-size: 16px;">Hejsa! Mit navn er Casper og det her er mit portfolio.</p>
+                <div class="pl-3">
+                    <div class="gap-10 text-[var(--element-color)] flex flex-row">
+                        <p class="ml-2 mt-1" style="font-size: 10px;">Source: Om mig</p>
+                        <p class="mt-1" style="font-size: 10px;">Effects controls</p>
+                        <RouterLink to="/about" class="mt-1" style="font-size: 10px; text-decoration: underline; color: var(--text-color);">Text</RouterLink>
+                        <p class="mt-1" style="font-size: 10px;">Properties</p>
+                        <RouterLink to="/school-projects" class="mt-1" style="font-size: 10px;">Project: Skole projekter</RouterLink>
+                        <RouterLink to="/personal-projects" class="mt-1" style="font-size: 10px;">Project: Personlige Projekter</RouterLink>
                     </div>
-                </div>
-                <div class="mt-3 grid grid-cols-12">
-                    <p class="ml-2 mt-1 text-[var(--text-color)] col-span-2" style="font-size: 10px;">Casper</p>
-                    <div class="flex flex-col col-span-10 col-start-3 col-end-12">
-                        <p class="mt-1 text-[var(--element-color)]" style="font-size: 10px;">00:00:06:34 - 00:00:11:56</p>
-                        <p class="mt-1 text-[var(--text-color)]" style="font-size: 16px; line-height: 22px;">Jeg specialiserer mig inden for video- og billedredigering, da jeg har haft en gnist for content creation siden jeg var barn.</p>
+                    <div class="mt-10 grid grid-cols-12">
+                        <p class="ml-2 mt-1 text-[var(--text-color)] col-span-2" style="font-size: 10px;">Casper</p>
+                        <div class="flex flex-col col-span-10 col-start-3 col-end-12">
+                            <p class="mt-1 text-[var(--element-color)]" style="font-size: 10px;">00:00:00:00 - 00:00:05:17</p>
+                            <p class="mt-1 text-[var(--text-color)]" style="font-size: 16px;">Hejsa! Mit navn er Casper og det her er mit portfolio.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="mt-3 grid grid-cols-12">
-                    <p class="ml-2 mt-1 text-[var(--text-color)] col-span-2" style="font-size: 10px;">Casper</p>
-                    <div class="flex flex-col col-span-10 col-start-3 col-end-12">
-                        <p class="mt-1 text-[var(--element-color)]" style="font-size: 10px;">00:00:13:43 - 00:00:23:16</p>
-                        <p class="mt-1 text-[var(--text-color)]" style="font-size: 16px; line-height: 22px;">Redigering for mig er ikke bare at klippe videoer sammen, men at skabe en oplevelse hvor timing, lyd og klip går hånd i hånd.</p>
+                    <div class="mt-3 grid grid-cols-12">
+                        <p class="ml-2 mt-1 text-[var(--text-color)] col-span-2" style="font-size: 10px;">Casper</p>
+                        <div class="flex flex-col col-span-10 col-start-3 col-end-12">
+                            <p class="mt-1 text-[var(--element-color)]" style="font-size: 10px;">00:00:06:34 - 00:00:11:56</p>
+                            <p class="mt-1 text-[var(--text-color)]" style="font-size: 16px; line-height: 22px;">Jeg specialiserer mig inden for video- og billedredigering, da jeg har haft en gnist for content creation siden jeg var barn.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="mt-3 grid grid-cols-12">
-                    <p class="ml-2 mt-1 text-[var(--text-color)] col-span-2" style="font-size: 10px;">Casper</p>
-                    <div class="flex flex-col col-span-10 col-start-3 col-end-12">
-                        <p class="mt-1 text-[var(--element-color)]" style="font-size: 10px;">00:00:25:05 - 00:00:39:56</p>
-                        <p class="mt-1 text-[var(--text-color)]" style="font-size: 16px; line-height: 22px;">På grund min store interesse for at redigere har jeg derfor valgt at designe mit portfolio i et layout inspireret af Adobe Premiere Pro.</p>
+                    <div class="mt-3 grid grid-cols-12">
+                        <p class="ml-2 mt-1 text-[var(--text-color)] col-span-2" style="font-size: 10px;">Casper</p>
+                        <div class="flex flex-col col-span-10 col-start-3 col-end-12">
+                            <p class="mt-1 text-[var(--element-color)]" style="font-size: 10px;">00:00:13:43 - 00:00:23:16</p>
+                            <p class="mt-1 text-[var(--text-color)]" style="font-size: 16px; line-height: 22px;">Redigering for mig er ikke bare at klippe videoer sammen, men at skabe en oplevelse hvor timing, lyd og klip går hånd i hånd.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="mt-3 grid grid-cols-12">
-                    <p class="ml-2 mt-1 text-[var(--text-color)] col-span-2" style="font-size: 10px;">Casper</p>
-                    <div class="flex flex-col col-span-10 col-start-3 col-end-12">
-                        <p class="mt-1 text-[var(--element-color)]" style="font-size: 10px;">00:00:39:56 - 00:00:44:19</p>
-                        <p class="mt-1 text-[var(--text-color)]" style="font-size: 16px; line-height: 22px;">Kig dig omkring og udforsk mine projekter.</p>
+                    <div class="mt-3 grid grid-cols-12">
+                        <p class="ml-2 mt-1 text-[var(--text-color)] col-span-2" style="font-size: 10px;">Casper</p>
+                        <div class="flex flex-col col-span-10 col-start-3 col-end-12">
+                            <p class="mt-1 text-[var(--element-color)]" style="font-size: 10px;">00:00:25:05 - 00:00:39:56</p>
+                            <p class="mt-1 text-[var(--text-color)]" style="font-size: 16px; line-height: 22px;">På grund min store interesse for at redigere har jeg derfor valgt at designe mit portfolio i et layout inspireret af Adobe Premiere Pro.</p>
+                        </div>
+                    </div>
+                    <div class="mt-3 grid grid-cols-12">
+                        <p class="ml-2 mt-1 text-[var(--text-color)] col-span-2" style="font-size: 10px;">Casper</p>
+                        <div class="flex flex-col col-span-10 col-start-3 col-end-12">
+                            <p class="mt-1 text-[var(--element-color)]" style="font-size: 10px;">00:00:39:56 - 00:00:44:19</p>
+                            <p class="mt-1 text-[var(--text-color)]" style="font-size: 16px; line-height: 22px;">Kig dig omkring og udforsk mine projekter.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="w-full mt-20 border-t-[2px] border-black grid grid-cols-12 min-h-[250px]">
-                    <p class="ml-2 mt-2 col-span-2" style="font-size: 10px; text-decoration: underline; color: var(--text-color)">Info</p>
+                    <p class="pl-5 mt-2 col-span-2" style="font-size: 10px; text-decoration: underline; color: var(--text-color)">Info</p>
                     
                         <div class="flex flex-row gap-10 col-start-3 col-end-12 mt-16 mb-16 justify-between items-start">
                             <div class="w-full flex justify-start text-[var(--text-color)]">

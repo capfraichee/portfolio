@@ -1,6 +1,12 @@
+<script setup>
+import SchoolProjects from '@/components/SchoolProjects.vue';
+import Footer from '@/components/Footer.vue';
+
+</script>
 <template>
-  <div class="school-projects">
-    <h1 class="text-blue-500">This is a school projects page</h1>
+  <div>
+    <SchoolProjects />
+    <Footer />
   </div>
 </template>
 
