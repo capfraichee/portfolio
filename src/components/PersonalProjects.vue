@@ -16,10 +16,11 @@
                 style="font-family: 'Mulish', sans-serif; font-size: 48px;">Personlige Projekter</h2>
 
             <!-- YouTube -->
-            <div class="col-start-3 col-span-8 flex flex-col gap-10 w-full mb-10">
+            <div class="md:col-start-3 md:col-span-8 col-span-12 flex flex-col gap-10 mb-10 px-10 md:px-0">
                 <div class="h-auto bg-gradient-to-r to-[var(--background-color-dark)] from-[var(--background-color-bright)] w-full flex flex-col rounded">
-                    <div class="flex flex-row-reverse w-full my-20">
-                        <div class="w-1/2 h-auto flex flex-row justify-center items-center gap-5 p-10">
+                    <div class="flex flex-col-reverse md:flex-row-reverse w-full my-20">
+                        <div class="w-full md:w-1/2 h-auto flex flex-row justify-center items-center gap-5 p-10">
+
                             <div class="w-1/4 relative flex flex-col items-center">
                                 <p class="text-[var(--text-color)] text-xl absolute -top-10 whitespace-nowrap">Klik her
                                 </p>
@@ -33,24 +34,25 @@
                             <img src="../assets/yt-logo.png" alt="YouTube logo" class="w-1/3 object-contain">
 
                         </div>
-                        <div class="w-1/2 h-auto text-[var(--text-color)] flex">
+                        <div class="w-full md:w-1/2 h-auto text-[var(--text-color)] flex pr-30 mb-10 md:mb-0">
                             <div class="w-3/4 h-auto flex flex-col ml-auto justify-center gap-3">
                                 <h3 class="font-bold leading-none" style="font-size: 48px;">Youtube</h3>
-                                <p>Jeg har siden Februar 2020 lavet Youtube videoer for sjovs skyld, med mig og mine
+                                <p class="sm:text-[14px] md:text-[16px]">Jeg har siden Februar 2020 lavet Youtube videoer for sjovs skyld, med mig og mine
                                     kammeraters sjoveste øjeblikke</p>
-                                <p>Siden da er jeg blevet bedre og bedre for hver video, da jeg har hver gang gået
+                                <p class="sm:text-[14px] md:text-[16px]">Siden da er jeg blevet bedre og bedre for hver video, da jeg har hver gang gået
                                     tilbage til den tidligere og kigget efter hvad jeg kunne have gjort bedre.</p>
                             </div>
                         </div>
+
                     </div>
                     <div class="flex flex-col h-auto w-full items-center pb-10 gap-5">
                         <div class="text-[var(--text-color)] text-center flex" style="width: calc(80% + 3.75rem); max-width: calc(64rem + 3.75rem);">
                             <p>Jeg er begyndt at lave små edits som intro til mine videoer, for at udfordre mig selv
                                 mere i at holde styr på tempo, timing og design på samme tid.</p>
                         </div>
-                        <div class="w-full h-auto mt-5 flex flex-row gap-15 px-5 justify-center">
-                            <div class="w-[40%] max-w-lg flex flex-col items-center">
-                                <div class="text-[var(--text-color)] text-center mb-3">
+                        <div class="w-full h-auto mt-5 flex flex-col md:flex-row gap-15 px-5 items-center md:items-start justify-center">
+                            <div class="w-full md:w-[40%] max-w-lg flex flex-col items-center">
+                                <div class="text-[var(--text-color)] text-center mb-3 min-h-[4rem] md:min-h-0 flex flex-col justify-end">
                                     <h4 class="font-bold text-xl leading-tight">DE TRE BJERGBESTIGERE</h4>
                                     <h4 class="font-bold text-xl leading-tight">[PEAK]</h4>
                                 </div>
@@ -68,8 +70,8 @@
                                     for at se hele videoen på YouTube.
                                 </p>
                             </div>
-                            <div class="w-[40%] max-w-lg flex flex-col items-center">
-                                <div class="text-[var(--text-color)] text-center mb-3">
+                            <div class="w-full md:w-[40%] max-w-lg flex flex-col items-center">
+                                <div class="text-[var(--text-color)] text-center mb-3 min-h-[4rem] md:min-h-0 flex flex-col justify-end">
                                     <h4 class="font-bold text-xl leading-tight">UNDSLIP BAGLOKALERNE</h4>
                                     <h4 class="font-bold text-xl leading-tight">[ESCAPE THE BACKROOMS]</h4>
                                 </div>
@@ -89,8 +91,8 @@
                             </div>
                         </div>
                         <div class="w-full h-auto flex flex-col items-center mt-10 px-5">
-                            <div class="w-[40%] max-w-lg flex flex-col items-center">
-                                <div class="text-[var(--text-color)] text-center mb-3">
+                            <div class="w-full md:w-[40%] max-w-lg flex flex-col items-center">
+                                <div class="text-[var(--text-color)] text-center mb-3 min-h-[4rem] md:min-h-0 flex flex-col justify-end">
                                     <h4 class="font-bold text-xl leading-tight">DE TRE SKRALDESPANDE</h4>
                                     <h4 class="font-bold text-xl leading-tight">[R.E.P.O]</h4>
                                 </div>
@@ -109,7 +111,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="text-[var(--text-color)] justify-center flex text-center mt-16">
+                        <div class="text-[var(--text-color)] justify-center flex text-center mt-16 px-10 md:px-0">
                             <p>Udover almindelige videoer med de bedste øjeblikke, har jeg også lavet videoer med webcam
                                 og VR.</p>
                         </div>
@@ -169,11 +171,11 @@
                             </div>
                             <div class="w-[40%] max-w-lg h-auto text-[var(--text-color)] flex">
                                 <div class="w-full h-auto flex flex-col ml-10 justify-center gap-3">
-                                    <h3 class="font-bold leading-none" style="font-size: 48px;">Photoshop</h3>
-                                    <p class="pr-30">Jeg laver mine egne thumbnails til hver video i Photoshop, da jeg
+                                    <h3 class="font-bold leading-none sm:text-[24px] md:text-[48px]">Photoshop</h3>
+                                    <p class="pr-10 md:pr-30">Jeg laver mine egne thumbnails til hver video i Photoshop, da jeg
                                         ikke
                                         synes det er nok kun at udfordre mig selv i Premiere Pro.</p>
-                                    <p class="pr-30">Her er tre af mange thumbnails jeg har lavet.</p>
+                                    <p class="pr-10 md:pr-30">Her er tre af mange thumbnails jeg har lavet.</p>
                                 </div>
                             </div>
                         </div>
