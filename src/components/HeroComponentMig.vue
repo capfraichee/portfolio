@@ -95,7 +95,7 @@
                         <div
                             class="w-full h-full flex justify-between items-center flex-col text-[var(--text-color)] py-2">
                             <p class="text-center">Min LinkedIn</p>
-                            <a href="https://www.linkedin.com/in/casper-rasmussen-2a13513b3/" target="" rel=""
+                            <a href="https://www.linkedin.com/in/casperbachr/" target="" rel=""
                                 class="flex items-center justify-center h-10">
                                 <img src="../assets/linkedin_logo.svg" alt="LinkedIn" class="w-10">
                             </a>
@@ -103,7 +103,7 @@
                         <div
                             class="w-full h-full flex justify-between items-center flex-col text-[var(--text-color)] py-2">
                             <p class="text-center leading-tight">Download mit skrevne CV her</p>
-                            <a :href="linkedinUrl" download="Casper_Rasmussen_CV.svg"
+                            <a :href="caspercvUrl" download="Casper Bach Rasmussen CV"
                                 class="bg-[var(--element-white)] text-[var(--background-color-dark)] px-8 py-2 rounded h-10 flex items-center justify-center whitespace-nowrap"
                                 style="font-family: 'Mulish', sans-serif; font-weight: 900;">
                                 Download CV
@@ -115,7 +115,7 @@
             </div>
             <div class="h-auto flex-1">
                 <div class="text-[var(--element-color)] flex flex-row gap-10">
-                    <p class="md:ml-2 sm:ml-5 mt-1" style="font-size: 10px; text-decoration: underline; color: var(--text-color)">
+                    <p class="md:ml-2 mt-1" style="font-size: 10px; text-decoration: underline; color: var(--text-color)">
                         Program: Video CV</p>
                     <RouterLink to="/personal-projects" class="mt-1" style="font-size: 10px;">Media Browser</RouterLink>
                 </div>
@@ -135,7 +135,7 @@
 </template>
 
 <script setup>
-import linkedinUrl from '../assets/linkedin_logo.svg'
+import caspercvUrl from '../../dist/assets/casper-rasmussen-cv.pdf?url';
 </script>
 
 <style scoped></style>

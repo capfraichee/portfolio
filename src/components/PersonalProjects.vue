@@ -50,62 +50,22 @@
                             <p>Jeg er begyndt at lave små edits som intro til mine videoer, for at udfordre mig selv
                                 mere i at holde styr på tempo, timing og design på samme tid.</p>
                         </div>
-                        <div class="w-full h-auto mt-5 flex flex-col md:flex-row gap-15 px-5 items-center md:items-start justify-center">
-                            <div class="w-full md:w-[40%] max-w-lg flex flex-col items-center">
+                        <div class="w-full h-auto mt-5 flex flex-wrap gap-15 px-5 items-center justify-center">
+                            <div v-for="video in introVideos" :key="video.id" class="w-full md:w-[40%] max-w-lg flex flex-col items-center">
                                 <div class="text-[var(--text-color)] text-center mb-3 min-h-[4rem] md:min-h-0 flex flex-col justify-end">
-                                    <h4 class="font-bold text-xl leading-tight">DE TRE BJERGBESTIGERE</h4>
-                                    <h4 class="font-bold text-xl leading-tight">[PEAK]</h4>
+                                    <h4 class="font-bold text-xl leading-tight">{{ video.title }}</h4>
+                                    <h4 class="font-bold text-xl leading-tight">{{ video.subtitle }}</h4>
                                 </div>
                                 <div class="border-2 border-[#3d3d3d] w-full aspect-video rounded overflow-hidden">
                                     <iframe class="w-full h-full"
-                                        src="https://www.youtube.com/embed/XG9ZFK5Q5Es?start=15"
+                                        :src="video.embedSrc"
                                         title="YouTube video player" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         allowfullscreen>
                                     </iframe>
                                 </div>
                                 <p class="text-[var(--text-color)] text-xs mt-3">
-                                    Klik <a href="https://youtu.be/XG9ZFK5Q5Es?si=Q2ogJGCaqXi7TJ6t" target="_blank"
-                                        class="underline hover:text-blue-500 transition-colors">her</a>
-                                    for at se hele videoen på YouTube.
-                                </p>
-                            </div>
-                            <div class="w-full md:w-[40%] max-w-lg flex flex-col items-center">
-                                <div class="text-[var(--text-color)] text-center mb-3 min-h-[4rem] md:min-h-0 flex flex-col justify-end">
-                                    <h4 class="font-bold text-xl leading-tight">UNDSLIP BAGLOKALERNE</h4>
-                                    <h4 class="font-bold text-xl leading-tight">[ESCAPE THE BACKROOMS]</h4>
-                                </div>
-                                <div class="border-2 border-[#3d3d3d] w-full aspect-video rounded overflow-hidden">
-                                    <iframe class="w-full h-full"
-                                        src="https://www.youtube.com/embed/MpgyDM-VEdo?start=46"
-                                        title="YouTube video player" frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                        allowfullscreen>
-                                    </iframe>
-                                </div>
-                                <p class="text-[var(--text-color)] text-xs mt-3">
-                                    Klik <a href="https://youtu.be/MpgyDM-VEdo?si=eM083jpYr6Vmuvol" target="_blank"
-                                        class="underline hover:text-blue-500 transition-colors">her</a> for at se hele
-                                    videoen på YouTube.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="w-full h-auto flex flex-col items-center mt-10 px-5">
-                            <div class="w-full md:w-[40%] max-w-lg flex flex-col items-center">
-                                <div class="text-[var(--text-color)] text-center mb-3 min-h-[4rem] md:min-h-0 flex flex-col justify-end">
-                                    <h4 class="font-bold text-xl leading-tight">DE TRE SKRALDESPANDE</h4>
-                                    <h4 class="font-bold text-xl leading-tight">[R.E.P.O]</h4>
-                                </div>
-                                <div class="border-2 border-[#3d3d3d] w-full aspect-video rounded overflow-hidden">
-                                    <iframe class="w-full h-full"
-                                        src="https://www.youtube.com/embed/fYwX_U2IcsU?start=37"
-                                        title="YouTube video player" frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                        allowfullscreen>
-                                    </iframe>
-                                </div>
-                                <p class="text-[var(--text-color)] text-xs mt-3">
-                                    Klik <a href="https://youtu.be/fYwX_U2IcsU?si=WCM5f-ELzb91YCU-" target="_blank"
+                                    Klik <a :href="video.ytLink" target="_blank"
                                         class="underline hover:text-blue-500 transition-colors">her</a>
                                     for at se hele videoen på YouTube.
                                 </p>
@@ -115,43 +75,24 @@
                             <p>Udover almindelige videoer med de bedste øjeblikke, har jeg også lavet videoer med webcam
                                 og VR.</p>
                         </div>
-                        <div class="w-full h-auto mt-5 flex flex-row gap-15 px-5 justify-center">
-                            <div class="w-[40%] max-w-lg flex flex-col items-center">
+                        <div class="w-full h-auto mt-5 flex flex-wrap gap-15 px-5 justify-center">
+                            <div v-for="video in vrVideos" :key="video.id" class="w-[40%] max-w-lg flex flex-col items-center">
                                 <div class="text-[var(--text-color)] text-center mb-3">
-                                    <h4 class="font-bold text-xl leading-tight">BLOD LATTER OG TÅRER</h4>
-                                    <h4 class="font-bold text-xl leading-tight">[Chained Together]</h4>
+                                    <h4 class="font-bold text-xl leading-tight">{{ video.title }}</h4>
+                                    <h4 class="font-bold text-xl leading-tight">{{ video.subtitle }}</h4>
                                 </div>
                                 <div class="border-2 border-[#3d3d3d] w-full aspect-video rounded overflow-hidden">
                                     <iframe class="w-full h-full"
-                                        src="https://www.youtube.com/embed/mPierZicIVY?si=1qUzAML7paF6ABo7"
+                                        :src="video.embedSrc"
                                         title="YouTube video player" frameborder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                         allowfullscreen>
                                     </iframe>
                                 </div>
                                 <p class="text-[var(--text-color)] text-xs mt-3">
-                                    Klik <a href="https://youtu.be/mPierZicIVY?si=1qUzAML7paF6ABo7" target="_blank"
+                                    Klik <a :href="video.ytLink" target="_blank"
                                         class="underline hover:text-blue-500 transition-colors">her</a>
                                     for at se hele videoen på YouTube.
-                                </p>
-                            </div>
-                            <div class="w-[40%] max-w-lg flex flex-col items-center">
-                                <div class="text-[var(--text-color)] text-center mb-3">
-                                    <h4 class="font-bold text-xl leading-tight">RICK GRIMES LÆRLINGE</h4>
-                                    <h4 class="font-bold text-xl leading-tight">[Arizona Sunshine 2 VR]</h4>
-                                </div>
-                                <div class="border-2 border-[#3d3d3d] w-full aspect-video rounded overflow-hidden">
-                                    <iframe class="w-full h-full"
-                                        src="https://www.youtube.com/embed/tR4f81Bz_Xw?si=ztbwpIsXub1omM1C"
-                                        title="YouTube video player" frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                        allowfullscreen>
-                                    </iframe>
-                                </div>
-                                <p class="text-[var(--text-color)] text-xs mt-3">
-                                    Klik <a href="https://youtu.be/tR4f81Bz_Xw?si=ztbwpIsXub1omM1C" target="_blank"
-                                        class="underline hover:text-blue-500 transition-colors">her</a> for at se hele
-                                    videoen på YouTube.
                                 </p>
                             </div>
                         </div>
@@ -162,12 +103,8 @@
                 <div class="h-auto bg-gradient-to-r from-[var(--background-color-dark)] to-[var(--background-color-bright)] w-full flex flex-col rounded">
                     <div class="flex flex-row w-full h-auto mt-10 mb-20 px-5 gap-15 justify-center items-center">
                         <div class="w-[40%] max-w-lg flex flex-col gap-10">
-                            <img src="../assets/as-vr.jpg" alt=""
+                            <img v-for="thumbnail in thumbnails" :key="thumbnail.id" :src="thumbnail.src" alt="Photoshop Thumbnail"
                                 class="w-full border-2 border-[#3d3d3d] rounded overflow-hidden object-cover">
-                                <img src="../assets/repo.jpg" alt=""
-                                    class="w-full border-2 border-[#3d3d3d] rounded overflow-hidden object-cover">
-                                <img src="../assets/sotf.jpg" alt=""
-                                    class="w-full border-2 border-[#3d3d3d] rounded overflow-hidden object-cover">
                             </div>
                             <div class="w-[40%] max-w-lg h-auto text-[var(--text-color)] flex">
                                 <div class="w-full h-auto flex flex-col ml-10 justify-center gap-3">
@@ -205,12 +142,60 @@
 <script setup>
 import { ref } from 'vue';
 
-import beatupbeforeImg from '../assets/beat-up-before.png';
-import beatupafterImg from '../assets/beat-up-after.PNG';
-import recipesiteImg from '../assets/recipe-site.svg';
-import recipecodeImg from '../assets/recipe-code.svg';
 import julbeforeImg from '../assets/jule-billede-before.jpg';
 import julafterImg from '../assets/jule-billede-after.jpg';
+
+import asVrImg from '../assets/as-vr.jpg';
+import repoImg from '../assets/repo.jpg';
+import sotfImg from '../assets/sotf.jpg';
+
+const thumbnails = [
+  { id: 1, src: asVrImg },
+  { id: 2, src: repoImg },
+  { id: 3, src: sotfImg },
+];
+
+const introVideos = [
+  {
+    id: 1,
+    title: 'DE TRE BJERGBESTIGERE',
+    subtitle: '[PEAK]',
+    embedSrc: 'https://www.youtube.com/embed/XG9ZFK5Q5Es?start=15',
+    ytLink: 'https://youtu.be/XG9ZFK5Q5Es?si=Q2ogJGCaqXi7TJ6t'
+  },
+  {
+    id: 2,
+    title: 'UNDSLIP BAGLOKALERNE',
+    subtitle: '[ESCAPE THE BACKROOMS]',
+    embedSrc: 'https://www.youtube.com/embed/MpgyDM-VEdo?start=46',
+    ytLink: 'https://youtu.be/MpgyDM-VEdo?si=eM083jpYr6Vmuvol'
+  },
+  {
+    id: 3,
+    title: 'DE TRE SKRALDESPANDE',
+    subtitle: '[R.E.P.O]',
+    embedSrc: 'https://www.youtube.com/embed/fYwX_U2IcsU?start=37',
+    ytLink: 'https://youtu.be/fYwX_U2IcsU?si=WCM5f-ELzb91YCU-'
+  },
+  
+];
+
+const vrVideos = [
+  {
+    id: 1,
+    title: 'BLOD LATTER OG TÅRER',
+    subtitle: '[Chained Together]',
+    embedSrc: 'https://www.youtube.com/embed/mPierZicIVY?si=1qUzAML7paF6ABo7',
+    ytLink: 'https://youtu.be/mPierZicIVY?si=1qUzAML7paF6ABo7'
+  },
+  {
+    id: 2,
+    title: 'RICK GRIMES LÆRLINGE',
+    subtitle: '[Arizona Sunshine 2 VR]',
+    embedSrc: 'https://www.youtube.com/embed/tR4f81Bz_Xw?si=ztbwpIsXub1omM1C',
+    ytLink: 'https://youtu.be/tR4f81Bz_Xw?si=ztbwpIsXub1omM1C'
+  }
+];
 
 const isShowingBeforeJul = ref(true);
 const isShowingBeforeBeatup = ref(true);
