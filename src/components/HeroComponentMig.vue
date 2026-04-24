@@ -103,7 +103,7 @@
                         <div
                             class="w-full h-full flex justify-between items-center flex-col text-[var(--text-color)] py-2">
                             <p class="text-center leading-tight">Download mit skrevne CV her</p>
-                            <a :href="caspercvUrl" download="Casper Bach Rasmussen CV"
+                            <a href="/casper-rasmussen-cv.pdf" target="_blank" download="Casper Bach Rasmussen CV.pdf"
                                 class="bg-[var(--element-white)] text-[var(--background-color-dark)] px-8 py-2 rounded h-10 flex items-center justify-center whitespace-nowrap"
                                 style="font-family: 'Mulish', sans-serif; font-weight: 900;">
                                 Download CV
@@ -135,7 +135,6 @@
 </template>
 
 <script setup>
-import caspercvUrl from '../../dist/assets/casper-rasmussen-cv.pdf?url';
 </script>
 
 <style scoped></style>
